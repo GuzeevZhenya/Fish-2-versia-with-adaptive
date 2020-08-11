@@ -1,3 +1,12 @@
+.catalog {
+    background: none;
+}
+
+.catalog__header {
+    background: none;
+    padding-bottom: 40px;
+}
+
 .catalog__item {
     // max-height: 240px;
     padding: 10px 8px 19px 8px;
@@ -13,7 +22,7 @@
 }
 
 .catalog__row {
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .catalog__item:hover {
@@ -42,4 +51,8 @@
     .catalog__item img {
         width: 100%;
     }
+    .catalog__row {
+        justify-content:center;
+    }
+    
 }

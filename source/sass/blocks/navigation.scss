@@ -1,32 +1,87 @@
-.navigation__list {
-    width: auto;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding-left: 140px;
-    padding-right: 73px;
-    flex-wrap: wrap;
-}
-
-.navigation__item {
-    // margin-bottom: 20px;
-}
-
-.navigation__item:first-child {
-    margin-left: 0;
-}
-
-.navigation__item:last-child {
-    margin-right: 0;
-}
-
-.navigation__link {
-    @include font-text(14px, 17px, 600);
-    text-decoration: none;
-    text-align: center;
-    color: #00519C;
-}
-
-.navigation__link:hover {
-    text-decoration: underline;
-}
+    .navigation__list {
+        width: auto;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding-left: 120px;
+        padding-right: 50px;
+        flex-wrap: wrap;
+    }
+    
+    .navigation__item {
+        // margin-bottom: 20px;
+    }
+    
+    .navigation__button {
+        display: none;
+    }
+    
+    .navigation__item:first-child {
+        margin-left: 0;
+    }
+    
+    .navigation__item:last-child {
+        margin-right: 0;
+    }
+    
+    .navigation__link {
+        @include font-text(14px, 17px, 600);
+        text-decoration: none;
+        text-align: center;
+        color: #00519C;
+    }
+    
+    .navigation__link:hover {
+        text-decoration: underline;
+    }
+    
+    .catalog__header .navigation__list {
+        padding-left: 70px;
+        padding-right: 0;
+    }
+    
+    @media(max-width:1218px) {
+        .catalog__header .footer__logo-info {
+            display: none;
+        }
+        .catalog__header .navigation__list {
+            padding-left: 0;
+        }
+        .header__logo {
+            margin-bottom: 20px;
+        }
+    }
+    
+    @media(max-width:1060px) {
+        .navigation__list {
+            padding-left: 30px;
+        }
+    }
+    
+    @media(max-width:984px) {
+        .navigation__list {
+            margin-bottom: 20px;
+            justify-content: center;
+            display: none;
+        }
+        .navigation__item {
+            margin-bottom: 20px;
+        }
+        .navigation__list {
+            display: none;
+            row-gap: 8px;
+        }
+        .navigation__button {
+            display: block;
+            position: absolute;
+            right: 30px;
+            border: none;
+            background-color: inherit;
+        }
+        .navigation__list--open {
+            display: block;
+        }
+        .navigation__link {
+            @include font-text(24px, 17px, 600);
+        }
+    }

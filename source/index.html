@@ -12,8 +12,11 @@
     <header class="header">
         <div class="container">
             <nav class="header__menu row">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link col" href="#">Our products </a></li>
+                <button class="navigation__button navigation__button--open" type="button" aria-expanded="false">
+                    <img src="images/icons/icon-close.svg" width="24" height="18" alt="">
+                </button>
+                <ul class="navigation__list navigation__list--open">
+                    <li class="navigation__item"><a class="navigation__link col" href="catalog.html">Our products </a></li>
                     <li class="navigation__item"><a class="navigation__link col" href="#">Receipes</a></li>
                     <li class="navigation__item"><a class="navigation__link col" href="#">Services</a></li>
                     <li class="navigation__item"><a class="navigation__link col" href="#">The promise</a></li>
@@ -23,8 +26,8 @@
                     <li class="navigation__item"><a class="navigation__link col" href="#">Company</a></li>
                     <li class="navigation__item"><a class="navigation__link col" href="#">Contacts</a></li>
                 </ul>
-                <div class="header__lang">
-                    <img src="images/uk.svg" alt="">
+                <div class="header__lang col">
+                    <img src="images/main-page/uk.svg" alt="">
                 </div>
             </nav>
 
@@ -462,8 +465,12 @@
                 <div class="footer__information">
                     <div class="footer__col col">
                         <div class="footer__icons">
-                            <img src="images/Group (1).svg" alt="">
-                            <img src="images/Group (3).svg" alt="">
+                            <a href="#">
+                                <img src="images/icons/Linkedin.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/icons/facebook.svg" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="footer__col col">
@@ -476,6 +483,8 @@
         </div>
     </footer>
 
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

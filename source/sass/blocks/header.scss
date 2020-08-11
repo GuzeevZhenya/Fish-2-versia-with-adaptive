@@ -19,7 +19,10 @@
 }
 
 .header__lang {
+    cursor: pointer;
     position: relative;
+    width: 32px;
+    height: 32px;
 }
 
 .header__lang:after {
@@ -31,4 +34,14 @@
     background: url('../../images/arrow.svg');
     right: -20px;
     top: 13px;
+}
+
+@media(max-width:984px) {
+    .header__menu {
+        flex-direction: column;
+    }
+    .header__lang {
+        position: absolute;
+        left: 0;
+    }
 }
