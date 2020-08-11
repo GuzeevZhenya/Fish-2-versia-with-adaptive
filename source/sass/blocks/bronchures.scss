@@ -1,0 +1,80 @@
+.bronchures {
+    padding: 39px 0;
+}
+
+.bronchures__title {
+    @include font-text(36px, 44px, 300);
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+    color: #00519C;
+}
+
+.bronchures__col {
+    width: auto;
+}
+
+.bronchures__box {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bronchures__link {
+    @include font-text(18px, 24px, 500);
+    display: block;
+    width: 356px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #1C75B7;
+    box-sizing: border-box;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: #1C75B7;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.bronchures__link::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 24px;
+    background: url('../../images/book.svg');
+    left: 20px;
+    top: 11px;
+}
+
+.bronchures__title::before {
+    content: "";
+    position: absolute;
+    width: 51px;
+    height: 6px;
+    background: url('../../images/Vector\ \(4\).svg');
+    top: 20px;
+    left: 32%;
+}
+
+.bronchures__title::after {
+    content: "";
+    position: absolute;
+    width: 51px;
+    height: 6px;
+    background: url('../../images/Vector\ \(4\).svg');
+    top: 20px;
+    right: 32%;
+}
+
+@media(max-width:526px) {
+    .bronchures__link {
+        width: 280px;
+        justify-content: flex-end;
+        padding-right: 5px;
+    }
+}

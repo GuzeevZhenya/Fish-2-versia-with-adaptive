@@ -1,0 +1,19 @@
+.advantages {
+    background: url("../../images/1196812783_and_11709029832.jpg") center (center/cover) no-repeat;
+    padding: 69px 0 76px 0;
+}
+
+.advantages__title {
+    @include font-text(36px, 44px, 300);
+    text-align: center;
+    color: #00519C;
+}
+
+.advantages__text {
+    @include font-text(18px, 32px, normal);
+    max-width: 585px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    color: #000000;
+}

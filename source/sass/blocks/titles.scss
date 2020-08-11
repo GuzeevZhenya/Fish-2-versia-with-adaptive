@@ -1,0 +1,12 @@
+.title {
+    @include font-text(36px, 44px, 300);
+    color: #00519C;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+@media(max-width:810px) {
+    .title {
+        width: auto;
+    }
+}

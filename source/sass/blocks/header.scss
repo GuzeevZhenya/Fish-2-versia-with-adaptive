@@ -1,0 +1,34 @@
+.header {
+    padding: 26px 0 157px 0;
+    background: url("../../images/norway.jpg") center (center/cover) no-repeat;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__info {
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #00519C;
+}
+
+.header__lang {
+    position: relative;
+}
+
+.header__lang:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    display: block;
+    background: url('../../images/arrow.svg');
+    right: -20px;
+    top: 13px;
+}

@@ -1,0 +1,31 @@
+.achievement {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.achievement__item {}
+
+.achievement__img {
+    vertical-align: top;
+}
+
+.achievement__img img {
+    height: 84px;
+    margin-bottom: 16px;
+}
+
+.achievement__text {
+    @include font-text(12px, 24px, 500);
+    max-width: 262px;
+    color: #00519C;
+}
+
+.achievement__col {
+    width: 100%;
+}
+
+@media(max-width:1156px) {
+    .achievement {
+        margin-bottom: 40px;
+    }
+}

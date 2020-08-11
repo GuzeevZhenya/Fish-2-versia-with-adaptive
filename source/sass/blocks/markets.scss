@@ -1,0 +1,30 @@
+.markets {
+    padding: 60px 0 110px 0;
+}
+
+.markets__img-col {
+    width: auto;
+}
+
+.markets__col {
+    max-width: 555px;
+}
+
+.markets__inner {
+    justify-content: center;
+}
+
+.markets__title {
+    text-align: center;
+    padding-bottom: 29px;
+    color: #00519C;
+}
+
+.markets__info {
+    @include font-text(14px, 24px, normal);
+    color: #000000;
+}
+
+.markets__img img {
+    margin-bottom: 15px;
+}

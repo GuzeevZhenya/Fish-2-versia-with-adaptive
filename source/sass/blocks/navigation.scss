@@ -1,0 +1,32 @@
+.navigation__list {
+    width: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 140px;
+    padding-right: 73px;
+    flex-wrap: wrap;
+}
+
+.navigation__item {
+    // margin-bottom: 20px;
+}
+
+.navigation__item:first-child {
+    margin-left: 0;
+}
+
+.navigation__item:last-child {
+    margin-right: 0;
+}
+
+.navigation__link {
+    @include font-text(14px, 17px, 600);
+    text-decoration: none;
+    text-align: center;
+    color: #00519C;
+}
+
+.navigation__link:hover {
+    text-decoration: underline;
+}

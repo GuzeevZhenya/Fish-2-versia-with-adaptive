@@ -1,0 +1,40 @@
+.certificates {
+    background: #EDF8FF;
+    padding: 49px 0 24px 0;
+    margin-bottom: 40px;
+}
+
+.certificates__title {
+    @include font-text(36px, 44px, 300);
+    color: #00519C;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.certificates__subtitle {
+    @include font-text(14px, 24px, normal);
+    text-align: center;
+    color: #000000;
+    padding-bottom: 51px;
+}
+
+// .certificates__inner {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+.certificates__info {
+    @include font-text(14px, 24px, normal);
+    max-width: 528px;
+    color: #000000;
+    margin-right: 0;
+}
+
+@media(max-width:1156px) {
+    .certificates__inner {
+        justify-content: center;
+    }
+    .certificates__info {
+        width: auto;
+    }
+}
